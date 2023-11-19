@@ -19,7 +19,9 @@ function App() {
   
 }, [counter, running]); 
 
-
+  function refreshPage() {
+    window.location.reload(false);
+  }
 
   return (
     <>
@@ -27,7 +29,7 @@ function App() {
         <button className="button-1" onClick={() => setCount((counter) => counter + 1)}>
           count is {counter}
         </button>
-        <button className="resetButton-1" onClick={() => setCount(() => 0)}>
+        <button className="resetButton-1" onClick={ refreshPage }>
           Reset
         </button>
         <button className="stopButton-1" onClick={() => setRunning(() => false)}>
