@@ -29,14 +29,14 @@ function App() {
         <button className="button-1" onClick={() => setCount((counter) => counter + 1)}>
           count is {counter}
         </button>
-        <button className="resetButton-1" onClick={ refreshPage }>
-          Reset
+        <button className="startButton-1" onClick={() => setRunning(() => true)}>
+          Start
         </button>
         <button className="stopButton-1" onClick={() => setRunning(() => false)}>
           Stop
         </button>
-        <button className="startButton-1" onClick={() => setRunning(() => true)}>
-          Start
+        <button className="resetButton-1" onClick={ refreshPage }>
+          Reset
         </button>
       </div>
     </>
