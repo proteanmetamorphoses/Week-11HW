@@ -8,5 +8,19 @@
 }
 
 .button-1 {
-  font-size: 32px
+  font-size: 32px;
+  background-color: rgb(255, 247, 0);
+}
+.stopButton-1 {
+  font-size: 32px;
+  background-color: rgb(255, 0, 89);
+}
+.startButton-1 {
+  font-size: 32px;
+  background-color: rgb(48, 227, 48);
+}
+
+.resetButton-1 {
+  font-size: 32px;
+  background-color: rgb(96, 96, 235);
 }
