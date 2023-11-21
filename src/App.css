@@ -5,26 +5,27 @@
   align-items: center;
   height: 100vh;
   row-gap: 25px;
+  background-color: rgba(0, 0, 0, 0.327);
 }
 
 .button-1 {
   width: 300px;
   font-size: 32px;
-  background-color: rgb(255, 247, 0);
+  background-color: rgb(231, 226, 100);
 }
 .stopButton-1 {
   width: 300px;
   font-size: 32px;
-  background-color: rgb(255, 0, 89);
+  background-color: rgb(219, 50, 109);
 }
 .startButton-1 {
   width: 300px;
   font-size: 32px;
-  background-color: rgb(48, 227, 48);
+  background-color: rgb(71, 206, 71);
 }
 
 .resetButton-1 {
   width: 300px;
   font-size: 32px;
-  background-color: rgb(96, 96, 235);
+  background-color: rgb(114, 114, 181);
 }

@@ -19,9 +19,11 @@ function App() {
   
 }, [counter, running]); 
 
-  function refreshPage() {
-    window.location.reload(false);
-  }
+function refreshPage() {
+  setCount(0);
+  setRunning(true);
+}
+
 
   return (
     <>
