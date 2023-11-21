@@ -27,7 +27,7 @@ ASSIGNMENT:
 * add a stop and a start buutton that changes the state of running.
 * add some css to App.css to position the button nicely (eg fles + a decent gap)
 * test...
-* push that branch to git, but do not merge.
+* push that branch to git, but do not merge. Completed.
 
 # React + Vite
 

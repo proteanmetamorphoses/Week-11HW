@@ -3,16 +3,25 @@ import './App.css'
 
 function App() {
   const [counter, setCount] = useState(0);
+  const [running, setRunning] = useState(true);
 
   useEffect(() => {
     console.log("useEffect starting"); 
     const interval = setInterval(() => { 
       setCount(counter + 1); 
-  }, 3000); 
+    }, 3000);
+    if(running){
+      return () => clearInterval(interval); 
+    }else{
+      clearTimeout(interval);
+    }
 
-  return () => clearInterval(interval); 
-}, [counter]); 
+  
+}, [counter, running]); 
 
+  function refreshPage() {
+    window.location.reload(false);
+  }
 
   return (
     <>
@@ -20,7 +29,13 @@ function App() {
         <button className="button-1" onClick={() => setCount((counter) => counter + 1)}>
           count is {counter}
         </button>
-        <button className="button-1" onClick={() => setCount(() => 0)}>
+        <button className="startButton-1" onClick={() => setRunning(() => true)}>
+          Start
+        </button>
+        <button className="stopButton-1" onClick={() => setRunning(() => false)}>
+          Stop
+        </button>
+        <button className="resetButton-1" onClick={ refreshPage }>
           Reset
         </button>
       </div>
